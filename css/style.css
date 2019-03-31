@@ -1,0 +1,122 @@
+/* ola */
+
+
+
+ video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+}
+
+video {
+    position: fixed;
+    top:50%;
+    left:50%;
+    min-width:100%;
+    min-height:100%;
+    width:1000;
+    height:1000;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+}
+
+@font-face {
+ font-family: "VCR OSD Mono";
+ src: url("../fonts/VCR.ttf");
+}
+
+body{
+  font-family: "VCR OSD Mono";
+  background-color:black;
+  color:lightgrey;
+  overflow:hidden;
+  margin:0;
+  text-shadow: black 2px 2px 1px, black -2px 2px 1px, black -2px -2px 1px, black 2px -2px 1px, black 0px 2px 1px, black 0px -2px 1px, black 2px 0px 1px, black -2px 0px 1px;
+
+}
+
+#video3 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: 150;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: contain;
+}
+
+#add {               
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);    
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+#background {
+	opacity: 1;
+	background-image: url("../media/img/checkered.jpg");
+	background-size: auto;
+}
+
+#center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:100vw;
+  height:100vh;
+}
+
+span {
+	font-size: 2rem;
+}
+
+h1{
+  font-weight:normal;
+  font-size:5rem;
+  width:750px;
+  text-align: center;
+}
+
+*::selection {
+    background: white;
+}
+
+a{
+	transition: 300ms;
+  padding:3px;
+	color: white;
+	text-decoration: none;
+} a:hover {
+	transition: 300ms;
+  cursor: pointer;
+  background-color:lightgrey;
+
+}
