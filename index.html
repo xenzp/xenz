@@ -5,6 +5,32 @@
             
 <link rel="icon" type="image/png" href="things/media/img/favicon.png">	
 
+<?php
+
+# get the client's IP address
+$ip = $_SERVER['REMOTE_ADDR'];
+
+# get some date/time information
+$today = getdate();
+$day = $today['weekday'];
+$month = $today['month'];
+$hour = $today['hours'];
+$minute = $today['minutes'];
+
+# get the drupal URI
+$curr_uri = check_plain(request_uri());
+
+# create a string to print
+$format = "%s %s, %s:%s, %s, %s\n";
+$text = sprintf($format, $month, $day, $hour, $minute, $ip, $curr_uri);
+
+# append the string to the log file
+$filename = '/tmp/temp.log';
+$fp = fopen($filename, 'a');
+fwrite($fp, $text);
+fclose($fp);
+
+?>	
 <!-- made by elpapu -->
         <link rel="stylesheet" href="things/css/style.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300" type="text/css">
