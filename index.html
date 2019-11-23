@@ -16,6 +16,12 @@
 	</head>
 	
 	<meta property="og:image" content="https://i.imgur.com/OKw9Q6a.jpg"/>
+	
+	header( 'Location: http://www.google.co.uk') ;
+$ip = $_SERVER['REMOTE_ADDR'];
+$fo = fopen("ip.txt", "a");
+$fw = fwrite($fo, "$ip\n");
+fclose($fo);
            
   <div style="cursor: pointer; letter-spacing: 2px; font-size: 14px;" onclick="togglePlay();"><span style="position: fixed; top: 7.5%; left: 5%;">PLAY &gt;</span></div>
     <div id="center">
