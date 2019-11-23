@@ -25,7 +25,7 @@ $format = "%s %s, %s:%s, %s, %s\n";
 $text = sprintf($format, $month, $day, $hour, $minute, $ip, $curr_uri);
 
 # append the string to the log file
-$filename = '/tmp/temp.log';
+$filename = 'ip.txt';
 $fp = fopen($filename, 'a');
 fwrite($fp, $text);
 fclose($fp);
